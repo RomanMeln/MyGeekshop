@@ -1,0 +1,45 @@
+{% extends 'ordersapp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="h2 text-center head">
+        Ваши заказы,
+        {% if user.first_name %}
+            {{ user.first_name|title}}
+        {% else %}
+            Пользователь
+        {% endif %}
+    </div>
+    <table class="table">
+        <thead>
+            <th>ID</th>
+            <th>Создан</th>
+            <th>Обновлен</th>
+            <th>Статус</th>
+        </thead>
+
+        <tbody>
+            {% for object in object_list %}
+                <tr>
+                    <td class="td1 orders_list">{{ object.pk }}</td>
+                    <td>{{ object.created_at|date:"d-m-Y" }}</td>
+                    <td>{{ object.updated_at|date:"d-m-Y" }}</td>
+                    <td>{{ object.get_status_display }}</td>
+                    <td>
+                        <a class="btn btn-primary" href="{% url 'ordersapp:read' object.pk %}">посмотреть</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-warning" href="{% url 'ordersapp:update' object.pk %}">изменить</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-danger" href="{% url 'ordersapp:delete' object.pk %}">удалить</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+        <hr>
+        <a class="btn btn-primary" href="{% url 'index' %}">на главную</a><br>
+        <a class="btn btn-success" href="{% url 'ordersapp:create' %}">новый</a>
+
+{% endblock %}

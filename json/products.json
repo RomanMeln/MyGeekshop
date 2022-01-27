@@ -1,0 +1,137 @@
+[
+  {
+    "category": "дом",
+    "name": "Лампа",
+    "image": "products_images/product-1.jpg",
+    "short_desc": "комфортная лампа",
+    "description": "прекрасно подойдет для установку на тумбу около кровати",
+    "price": "3000",
+    "quantity": "17"
+  },
+  {
+    "category": "модерн",
+    "name": "Подушка",
+    "image": "products_images/product-1-lg.jpg",
+    "short_desc": "половинка подушки",
+    "description": "Прекрасная удобная красная половика подушки",
+    "price": "500",
+    "quantity": "99"
+  },
+  {
+    "category": "модерн",
+    "name": "кресло",
+    "image": "products_images/product-2.jpg",
+    "short_desc": "удобное кресло",
+    "description": "прекрасно подойдет сидеть",
+    "price": "3200",
+    "quantity": "22"
+  },
+  {
+    "category": "дом",
+    "name": "лампа",
+    "image": "products_images/product-2-sm.jpg",
+    "short_desc": "настенная лампа",
+    "description": "лампа, которая крепится на стену",
+    "price": "1000",
+    "quantity": "44"
+  },
+  {
+    "category": "офис",
+    "name": "ваза",
+    "image": "products_images/product-3.jpg",
+    "short_desc": "бесполезная ваза",
+    "description": "ваза, бесполезная дома, но прекрасна для бесполезного украшения офиса",
+    "price": "999",
+    "quantity": "99"
+  },
+  {
+    "category": "классика",
+    "name": "диван",
+    "image": "products_images/product-3-sm.jpg",
+    "short_desc": "обычный диван",
+    "description": "обычный удобный диван",
+    "price": "10000",
+    "quantity": "8"
+  },
+  {
+    "category": "модерн",
+    "name": "стул",
+    "image": "products_images/product-4.jpg",
+    "short_desc": "интересный стул",
+    "description": "интересный стул, чтобы сидеть",
+    "price": "1200",
+    "quantity": "15"
+  },
+  {
+    "category": "офис",
+    "name": "часы",
+    "image": "products_images/product-4-sm.jpg",
+    "short_desc": "часы для офиса",
+    "description": "часы без цифр для тех, кому не нужно время",
+    "price": "2000",
+    "quantity": "1"
+  },
+  {
+    "category": "дом",
+    "name": "лампа",
+    "image": "products_images/product-5-sm.jpg",
+    "short_desc": "подвесная лампа",
+    "description": "подойдет для освещения стола на кухне",
+    "price": "1300",
+    "quantity": "5"
+  },
+  {
+    "category": "модерн",
+    "name": "лампа",
+    "image": "products_images/product-11.jpg",
+    "short_desc": "направленная лампа",
+    "description": "подойдет для освещения направленного освещения стола",
+    "price": "1000",
+    "quantity": "6"
+  },
+  {
+    "category": "классика",
+    "name": "стул",
+    "image": "products_images/product-21.jpg",
+    "short_desc": "хороший стул",
+    "description": "удобный стандартный стул",
+    "price": "1500",
+    "quantity": "45"
+  },
+  {
+    "category": "модерн",
+    "name": "лампа",
+    "image": "products_images/product-31.jpg",
+    "short_desc": "уникальная лампа",
+    "description": "лампа на прикроватную тумбочку",
+    "price": "1750",
+    "quantity": "27"
+  },
+  {
+    "category": "дом",
+    "name": "бра",
+    "image": "products_images/product-41.jpg",
+    "short_desc": "настенная лампа",
+    "description": "подойдет для установки над головой",
+    "price": "1450",
+    "quantity": "30"
+  },
+  {
+    "category": "дом",
+    "name": "ступка",
+    "image": "products_images/product-51.jpg",
+    "short_desc": "черная ступка",
+    "description": "для перетерки перца",
+    "price": "4000",
+    "quantity": "57"
+  },
+  {
+    "category": "дом",
+    "name": "ваза",
+    "image": "products_images/product-61.jpg",
+    "short_desc": "интеренсая ваза",
+    "description": "подойдет для цветов и карандашей",
+    "price": "3000",
+    "quantity": "333"
+  }
+]

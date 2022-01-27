@@ -1,0 +1,13 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4?=
+From: django@gb.local
+To: test@mail.mail
+Date: Sun, 26 Dec 2021 13:47:58 -0000
+Message-ID: <164052647844.8252.17134719396496271779@DESKTOP-UJHA8UM>
+
+http://localhost:8000/auth/verify/test@mail.mail/bd991802debfcfb0195897d38538df61404df064/
+-------------------------------------------------------------------------------
