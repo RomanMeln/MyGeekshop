@@ -22,7 +22,8 @@ def get_same_products(hot_product):
 
 def index(request):
 
-    products_list = Product.objects.all()[:4]
+    #products_list = Product.objects.all()[:4]
+    products_list = Product.objects.all().select_related()[:4]
     print(products_list.query)
 
     context = {
@@ -34,7 +35,7 @@ def index(request):
 
 
 def products(request, pk=None, page=1):
-    title = 'продукты'
+
     links_menu = ProductCategory.objects.all()
 
     if pk is not None:

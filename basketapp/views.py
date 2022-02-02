@@ -10,7 +10,7 @@ from django.urls import reverse
 @login_required
 def basket(request):
     context = {
-        'basket_list': Basket.objects.filter(user=request.user)
+        'basket_list': Basket.objects.filter(user=request.user).select_related()
     }
     return render(request, 'basketapp/basket.html', context)
 
