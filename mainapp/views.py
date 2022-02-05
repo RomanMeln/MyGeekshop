@@ -4,8 +4,23 @@ import random
 from django.conf import settings
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.shortcuts import render, get_object_or_404
+from django.views.decorators.cache import cache_page, never_cache
+
 from mainapp.models import ProductCategory, Product
 from basketapp.models import Basket
+from django.core.cache import cache
+
+
+def get_links_menu():
+    if settings.LOW_CACHE:
+        key = 'links_menu'
+        links_menu = cache.get(key)
+        if links_menu is None:
+            links_menu = ProductCategory.objects.filter(is_active=True)
+            cache.set(key, links_menu)
+        return links_menu
+    else:
+        return ProductCategory.objects.filter(is_active=True)
 
 
 def get_hot_product():
@@ -34,9 +49,11 @@ def index(request):
     return render(request, 'mainapp/index.html', context=context)
 
 
+#@never_cache
+#@cache_page(3600)
 def products(request, pk=None, page=1):
 
-    links_menu = ProductCategory.objects.all()
+    links_menu = get_links_menu()
 
     if pk is not None:
         if pk == 0:
@@ -80,7 +97,7 @@ def contact(request):
 
 
 def product(request, pk):
-    links_menu = ProductCategory.objects.all()
+    links_menu = get_links_menu()
     context = {
         'links_menu': links_menu,
         'product': get_object_or_404(Product, pk=pk),
